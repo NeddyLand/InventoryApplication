@@ -41,6 +41,10 @@
             this.txtTotalAmount = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridOrder = new System.Windows.Forms.DataGridView();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.OrderQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtOrderQuantity = new System.Windows.Forms.TextBox();
             this.txtProductPrice = new System.Windows.Forms.TextBox();
@@ -54,10 +58,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OrderQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridCustomers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridProducts)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -222,6 +222,30 @@
             this.dataGridOrder.Size = new System.Drawing.Size(420, 197);
             this.dataGridOrder.TabIndex = 23;
             // 
+            // ProductID
+            // 
+            this.ProductID.HeaderText = "ID Товара";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            // 
+            // ProductName
+            // 
+            this.ProductName.HeaderText = "Наименование";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // ProductPrice
+            // 
+            this.ProductPrice.HeaderText = "Цена";
+            this.ProductPrice.Name = "ProductPrice";
+            this.ProductPrice.ReadOnly = true;
+            // 
+            // OrderQuantity
+            // 
+            this.OrderQuantity.HeaderText = "Кол-во";
+            this.OrderQuantity.Name = "OrderQuantity";
+            this.OrderQuantity.ReadOnly = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtOrderQuantity);
@@ -337,9 +361,9 @@
             this.label6.Location = new System.Drawing.Point(7, 21);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 17);
+            this.label6.Size = new System.Drawing.Size(192, 17);
             this.label6.TabIndex = 26;
-            this.label6.Text = "Поиск по Имени клиента";
+            this.label6.Text = "Поиск по Фамилия клиента";
             // 
             // label7
             // 
@@ -362,30 +386,6 @@
             this.btnDelete.Text = "<<";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // ProductID
-            // 
-            this.ProductID.HeaderText = "ID Товара";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.ReadOnly = true;
-            // 
-            // ProductName
-            // 
-            this.ProductName.HeaderText = "Наименование";
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            // 
-            // ProductPrice
-            // 
-            this.ProductPrice.HeaderText = "Цена";
-            this.ProductPrice.Name = "ProductPrice";
-            this.ProductPrice.ReadOnly = true;
-            // 
-            // OrderQuantity
-            // 
-            this.OrderQuantity.HeaderText = "Кол-во";
-            this.OrderQuantity.Name = "OrderQuantity";
-            this.OrderQuantity.ReadOnly = true;
             // 
             // CreateOrders
             // 

@@ -58,7 +58,7 @@ namespace InventoryApplication
                         }
                     }
                 }
-                validateResponseMessage();
+                ValidateResponseMessage();
             }
             else
             {
@@ -67,7 +67,7 @@ namespace InventoryApplication
         }
 
         // Validate Sign-In
-        private void validateResponseMessage()
+        private void ValidateResponseMessage()
         {
             if (responseMessage == "Successful Login" || responseMessage.Equals("Successful Login"))
             {

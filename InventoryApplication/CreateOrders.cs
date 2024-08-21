@@ -243,7 +243,7 @@ namespace InventoryApplication
         // Search Filter - Customers
         private void txtCustomerSearch_TextChanged(object sender, EventArgs e)
         {
-            customersDT.DefaultView.RowFilter = string.Format("Имя LIKE '%{0}%'", txtCustomerSearch.Text);
+            customersDT.DefaultView.RowFilter = string.Format("Фамилия LIKE '%{0}%'", txtCustomerSearch.Text);
         }
 
         // Search Filter - Products
